@@ -1,0 +1,66 @@
+# Build artifacts
+target/
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker files
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log*
+
+# Test results
+*.tmp
+*.temp
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Maven wrapper (optional - remove if you want to use it)
+.mvn/wrapper/maven-wrapper.jar
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Database files
+*.db
+*.sqlite
+
+# Monitoring configs (these should be mounted as volumes)
+monitoring/

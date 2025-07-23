@@ -1,0 +1,322 @@
+2025-07-23 11:59:20.530  INFO [main] com.company.OrderManagementApplication   : Starting OrderManagementApplication using Java 23.0.1 with PID 26556 (C:\Users\anon\Desktop\Code\order\order_management\application\target\classes started by anon in C:\Users\anon\Desktop\Code\order\order_management)
+2025-07-23 11:59:20.532 DEBUG [main] com.company.OrderManagementApplication   : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23 11:59:20.533  INFO [main] com.company.OrderManagementApplication   : The following 1 profile is active: "dev"
+2025-07-23 11:59:21.746  INFO [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23 11:59:21.747  INFO [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23 11:59:21.778  INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23 11:59:22.045  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23 11:59:22.162  INFO [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68d8ae27
+2025-07-23 11:59:22.164  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23 11:59:22.185  INFO [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/order_management (PostgreSQL 17.4)
+2025-07-23 11:59:22.226  INFO [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.022s)
+2025-07-23 11:59:22.267  INFO [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2025-07-23 11:59:22.268  INFO [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-07-23 11:59:22.624  WARN [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-23 11:59:24.589  INFO [main] com.company.OrderManagementApplication   : Started OrderManagementApplication in 4.495 seconds (process running for 4.923)
+2025-07-23 11:59:24.813  INFO [RMI TCP Connection(1)-172.21.144.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23 11:59:38.760  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23 11:59:38.762  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23 11:59:40.518  INFO [main] com.company.OrderManagementApplication   : Starting OrderManagementApplication using Java 23.0.1 with PID 10144 (C:\Users\anon\Desktop\Code\order\order_management\application\target\classes started by anon in C:\Users\anon\Desktop\Code\order\order_management)
+2025-07-23 11:59:40.520 DEBUG [main] com.company.OrderManagementApplication   : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23 11:59:40.521  INFO [main] com.company.OrderManagementApplication   : The following 1 profile is active: "dev"
+2025-07-23 11:59:41.722  INFO [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23 11:59:41.722  INFO [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23 11:59:41.751  INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23 11:59:42.002  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23 11:59:42.105  INFO [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68d8ae27
+2025-07-23 11:59:42.106  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23 11:59:42.124  INFO [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/order_management (PostgreSQL 17.4)
+2025-07-23 11:59:42.148  INFO [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-07-23 11:59:42.150  INFO [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.011s)
+2025-07-23 11:59:42.160  INFO [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-07-23 11:59:42.214  INFO [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-07-23 11:59:42.219  INFO [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - Create manufacturing orders table"
+2025-07-23 11:59:42.242  INFO [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - Create customer orders tables"
+2025-07-23 11:59:42.262  INFO [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - Add manufacturing order index"
+2025-07-23 11:59:42.266  WARN [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: relation "idx_customer_orders_manufacturing_order_id" already exists, skipping (SQL State: 42P07 - Error Code: 0)
+2025-07-23 11:59:42.273  INFO [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.033s)
+2025-07-23 11:59:42.625  WARN [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-23 11:59:44.540  INFO [main] com.company.OrderManagementApplication   : Started OrderManagementApplication in 4.478 seconds (process running for 4.945)
+2025-07-23 11:59:44.752  INFO [RMI TCP Connection(3)-172.21.144.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23 11:59:54.068  INFO [http-nio-8080-exec-3] c.c.c.a.c.PlaceCustomerOrderHandler      : Starting customer order placement: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, customerId=cfcb23dd-36a7-4bbb-ac37-4431708f5592, itemCount=2
+2025-07-23 11:59:54.069 DEBUG [http-nio-8080-exec-3] c.c.c.a.c.PlaceCustomerOrderHandler      : Validating order items for orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875
+2025-07-23 11:59:54.069  INFO [http-nio-8080-exec-3] c.c.c.domain.model.CustomerOrder         : Customer order placed: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, totalAmount=USD 487.40
+2025-07-23 11:59:54.089 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 11:59:54.115 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 11:59:54.138 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into customer_orders (currency,customer_address,customer_email,customer_id,customer_name,manufacturing_order_id,placed_at,status,total_amount,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 11:59:54.143 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 11:59:54.151 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 11:59:54.152 DEBUG [http-nio-8080-exec-3] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderPlaced
+2025-07-23 11:59:54.152  INFO [http-nio-8080-exec-3] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderPlaced timestamp=2025-07-23T09:59:54.069015200Z
+2025-07-23 11:59:54.153  INFO [http-nio-8080-exec-3] c.c.c.a.c.PlaceCustomerOrderHandler      : Successfully placed customer order: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, totalAmount=USD 487.40, duration=84ms
+2025-07-23 11:59:54.153  INFO [http-nio-8080-exec-3] AUDIT                                    : CUSTOMER_ORDER_PLACED orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875 customerId=cfcb23dd-36a7-4bbb-ac37-4431708f5592 totalAmount=USD 487.40 itemCount=2 duration=84ms
+2025-07-23 12:00:13.222 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:00:13.226  INFO [http-nio-8080-exec-2] c.c.c.domain.model.CustomerOrder         : Customer order status updated: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, from=PLACED, to=CONFIRMED
+2025-07-23 12:00:13.228 DEBUG [http-nio-8080-exec-2] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderStatusUpdated
+2025-07-23 12:00:13.228  INFO [http-nio-8080-exec-2] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderStatusUpdated timestamp=2025-07-23T10:00:13.227211400Z
+2025-07-23 12:00:13.232 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:00:13.277 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select count(*) from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:00:13.279  INFO [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Starting manufacturing order creation: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, productCode=AUTO-1753264813279
+2025-07-23 12:00:13.279  INFO [SimpleAsyncTaskExecutor-17] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order created: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875
+2025-07-23 12:00:13.279 DEBUG [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Validating order scheduling for orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875
+2025-07-23 12:00:13.292 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.status=?
+2025-07-23 12:00:13.295 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:00:13.296 DEBUG [SimpleAsyncTaskExecutor-17] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderCreated
+2025-07-23 12:00:13.296  INFO [SimpleAsyncTaskExecutor-17] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderCreated timestamp=2025-07-23T10:00:13.279941100Z
+2025-07-23 12:00:13.296  INFO [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Successfully created manufacturing order: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, duration=17ms
+2025-07-23 12:00:13.296  INFO [SimpleAsyncTaskExecutor-17] AUDIT                                    : MANUFACTURING_ORDER_CREATED orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875 productCode=AUTO-1753264813279 quantity=1 user=SYSTEM duration=17ms
+2025-07-23 12:00:13.297 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : insert into manufacturing_orders (actual_completion_date,actual_start_date,created_at,description,expected_completion_date,expected_start_date,product_code,quantity,specifications,status,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:00:13.297 DEBUG [SimpleAsyncTaskExecutor-18] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:00:13.299 DEBUG [SimpleAsyncTaskExecutor-18] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:00:42.110 DEBUG [http-nio-8080-exec-4] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:00:42.111  INFO [http-nio-8080-exec-4] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order status changed: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, from=PENDING, to=IN_PROGRESS
+2025-07-23 12:00:42.112 DEBUG [http-nio-8080-exec-4] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderStatusChanged
+2025-07-23 12:00:42.112  INFO [http-nio-8080-exec-4] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderStatusChanged timestamp=2025-07-23T10:00:42.111577700Z
+2025-07-23 12:00:42.112 DEBUG [http-nio-8080-exec-4] org.hibernate.SQL                        : update manufacturing_orders set actual_completion_date=?,actual_start_date=?,created_at=?,description=?,expected_completion_date=?,expected_start_date=?,product_code=?,quantity=?,specifications=?,status=?,updated_at=? where id=?
+2025-07-23 12:00:42.114 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at from customer_orders coje1_0 where coje1_0.manufacturing_order_id=?
+2025-07-23 12:00:42.119 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : select i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from order_items i1_0 where i1_0.customer_order_id=?
+2025-07-23 12:00:42.123  INFO [SimpleAsyncTaskExecutor-19] c.c.c.domain.model.CustomerOrder         : Customer order status updated: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, from=CONFIRMED, to=MANUFACTURING_IN_PROGRESS
+2025-07-23 12:00:42.124 DEBUG [SimpleAsyncTaskExecutor-19] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderStatusUpdated
+2025-07-23 12:00:42.124  INFO [SimpleAsyncTaskExecutor-19] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderStatusUpdated timestamp=2025-07-23T10:00:42.123296900Z
+2025-07-23 12:00:42.124 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:01:07.853 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:01:07.854  INFO [http-nio-8080-exec-5] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order status changed: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, from=IN_PROGRESS, to=COMPLETED
+2025-07-23 12:01:07.854  INFO [http-nio-8080-exec-5] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order completed: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875
+2025-07-23 12:01:07.855 DEBUG [http-nio-8080-exec-5] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderStatusChanged
+2025-07-23 12:01:07.855  INFO [http-nio-8080-exec-5] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderStatusChanged timestamp=2025-07-23T10:01:07.854792200Z
+2025-07-23 12:01:07.855 DEBUG [http-nio-8080-exec-5] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderCompleted
+2025-07-23 12:01:07.855  INFO [http-nio-8080-exec-5] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderCompleted timestamp=2025-07-23T10:01:07.854792200Z
+2025-07-23 12:01:07.856 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : update manufacturing_orders set actual_completion_date=?,actual_start_date=?,created_at=?,description=?,expected_completion_date=?,expected_start_date=?,product_code=?,quantity=?,specifications=?,status=?,updated_at=? where id=?
+2025-07-23 12:01:07.856 DEBUG [SimpleAsyncTaskExecutor-21] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at from customer_orders coje1_0 where coje1_0.manufacturing_order_id=?
+2025-07-23 12:01:07.857 DEBUG [SimpleAsyncTaskExecutor-22] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at from customer_orders coje1_0 where coje1_0.manufacturing_order_id=?
+2025-07-23 12:01:07.858 DEBUG [SimpleAsyncTaskExecutor-21] org.hibernate.SQL                        : select i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from order_items i1_0 where i1_0.customer_order_id=?
+2025-07-23 12:01:07.860 DEBUG [SimpleAsyncTaskExecutor-22] org.hibernate.SQL                        : select i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from order_items i1_0 where i1_0.customer_order_id=?
+2025-07-23 12:01:07.863  INFO [SimpleAsyncTaskExecutor-22] c.c.c.domain.model.CustomerOrder         : Customer order status updated: orderId=83e1dd34-4dd7-48b7-b5ef-39dab0cb6875, from=MANUFACTURING_IN_PROGRESS, to=MANUFACTURING_COMPLETED
+2025-07-23 12:01:07.864 DEBUG [SimpleAsyncTaskExecutor-22] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderStatusUpdated
+2025-07-23 12:01:07.864  INFO [SimpleAsyncTaskExecutor-22] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderStatusUpdated timestamp=2025-07-23T10:01:07.863581500Z
+2025-07-23 12:01:07.865 DEBUG [SimpleAsyncTaskExecutor-22] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:04:54.706  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23 12:04:54.708  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23 12:04:56.665  INFO [main] com.company.OrderManagementApplication   : Starting OrderManagementApplication using Java 23.0.1 with PID 20608 (C:\Users\anon\Desktop\Code\order\order_management\application\target\classes started by anon in C:\Users\anon\Desktop\Code\order\order_management)
+2025-07-23 12:04:56.666 DEBUG [main] com.company.OrderManagementApplication   : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23 12:04:56.667  INFO [main] com.company.OrderManagementApplication   : The following 1 profile is active: "dev"
+2025-07-23 12:04:57.899  INFO [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23 12:04:57.899  INFO [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23 12:04:57.930  INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23 12:04:58.190  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23 12:04:58.301  INFO [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b336cc8
+2025-07-23 12:04:58.302  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23 12:04:58.321  INFO [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/order_management (PostgreSQL 17.4)
+2025-07-23 12:04:58.356  INFO [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.019s)
+2025-07-23 12:04:58.395  INFO [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2025-07-23 12:04:58.397  INFO [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-07-23 12:04:58.784  WARN [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-23 12:05:00.777  INFO [main] com.company.OrderManagementApplication   : Started OrderManagementApplication in 4.532 seconds (process running for 4.947)
+2025-07-23 12:05:00.958  INFO [RMI TCP Connection(2)-172.21.144.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23 12:05:02.631 ERROR [http-nio-8080-exec-5] c.c.o.config.GlobalExceptionHandler      : Unhandled exception: No static resource favicon.ico.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-07-23 12:05:20.793 ERROR [http-nio-8080-exec-4] c.c.o.config.GlobalExceptionHandler      : Unhandled exception: No static resource favicon.ico.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-07-23 12:16:19.195  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23 12:16:19.195  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23 12:29:49.554  INFO [main] com.company.OrderManagementApplication   : Starting OrderManagementApplication using Java 23.0.1 with PID 22592 (C:\Users\anon\Desktop\Code\order\order_management\application\target\classes started by anon in C:\Users\anon\Desktop\Code\order\order_management)
+2025-07-23 12:29:49.555 DEBUG [main] com.company.OrderManagementApplication   : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23 12:29:49.556  INFO [main] com.company.OrderManagementApplication   : The following 1 profile is active: "dev"
+2025-07-23 12:29:50.764  INFO [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23 12:29:50.764  INFO [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23 12:29:50.797  INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23 12:29:51.059  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23 12:29:51.173  INFO [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b336cc8
+2025-07-23 12:29:51.174  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23 12:29:51.193  INFO [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/order_management (PostgreSQL 17.4)
+2025-07-23 12:29:51.230  INFO [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.020s)
+2025-07-23 12:29:51.266  INFO [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2025-07-23 12:29:51.268  INFO [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-07-23 12:29:51.633  WARN [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-23 12:29:53.606  INFO [main] com.company.OrderManagementApplication   : Started OrderManagementApplication in 4.478 seconds (process running for 4.892)
+2025-07-23 12:29:53.868  INFO [RMI TCP Connection(2)-172.21.144.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23 12:30:23.683  INFO [http-nio-8080-exec-2] c.c.c.a.c.PlaceCustomerOrderHandler      : Starting customer order placement: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, customerId=3c203056-dbfd-4d03-ad29-cd8f8334efbc, itemCount=2
+2025-07-23 12:30:23.683 DEBUG [http-nio-8080-exec-2] c.c.c.a.c.PlaceCustomerOrderHandler      : Validating order items for orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627
+2025-07-23 12:30:23.684  INFO [http-nio-8080-exec-2] c.c.c.domain.model.CustomerOrder         : Customer order placed: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, totalAmount=USD 487.40
+2025-07-23 12:30:23.702 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:23.726 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:23.745 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into customer_orders (currency,customer_address,customer_email,customer_id,customer_name,manufacturing_order_id,placed_at,status,total_amount,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:30:23.749 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 12:30:23.755 DEBUG [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 12:30:23.757 DEBUG [http-nio-8080-exec-2] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderPlaced
+2025-07-23 12:30:23.757  INFO [http-nio-8080-exec-2] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderPlaced timestamp=2025-07-23T10:30:23.684364900Z
+2025-07-23 12:30:23.757  INFO [http-nio-8080-exec-2] c.c.c.a.c.PlaceCustomerOrderHandler      : Successfully placed customer order: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, totalAmount=USD 487.40, duration=74ms
+2025-07-23 12:30:23.758  INFO [http-nio-8080-exec-2] AUDIT                                    : CUSTOMER_ORDER_PLACED orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627 customerId=3c203056-dbfd-4d03-ad29-cd8f8334efbc totalAmount=USD 487.40 itemCount=2 duration=74ms
+2025-07-23 12:30:26.653 DEBUG [http-nio-8080-exec-4] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:26.656  INFO [http-nio-8080-exec-4] c.c.c.domain.model.CustomerOrder         : Customer order status updated: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, from=PLACED, to=CONFIRMED
+2025-07-23 12:30:26.658 DEBUG [http-nio-8080-exec-4] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderStatusUpdated
+2025-07-23 12:30:26.658  INFO [http-nio-8080-exec-4] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderStatusUpdated timestamp=2025-07-23T10:30:26.656511800Z
+2025-07-23 12:30:26.662 DEBUG [http-nio-8080-exec-4] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:30:26.706 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select count(*) from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:30:26.709  INFO [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Starting manufacturing order creation: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, productCode=AUTO-1753266626709
+2025-07-23 12:30:26.709  INFO [SimpleAsyncTaskExecutor-17] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order created: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627
+2025-07-23 12:30:26.709 DEBUG [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Validating order scheduling for orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627
+2025-07-23 12:30:26.722 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.status=?
+2025-07-23 12:30:26.725 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:30:26.726 DEBUG [SimpleAsyncTaskExecutor-17] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderCreated
+2025-07-23 12:30:26.726  INFO [SimpleAsyncTaskExecutor-17] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderCreated timestamp=2025-07-23T10:30:26.709241200Z
+2025-07-23 12:30:26.727  INFO [SimpleAsyncTaskExecutor-17] .c.m.a.c.CreateManufacturingOrderHandler : Successfully created manufacturing order: orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627, duration=18ms
+2025-07-23 12:30:26.727  INFO [SimpleAsyncTaskExecutor-17] AUDIT                                    : MANUFACTURING_ORDER_CREATED orderId=3a3aadd4-44c8-412c-b446-6a5fa9607627 productCode=AUTO-1753266626709 quantity=1 user=SYSTEM duration=18ms
+2025-07-23 12:30:26.727 DEBUG [SimpleAsyncTaskExecutor-17] org.hibernate.SQL                        : insert into manufacturing_orders (actual_completion_date,actual_start_date,created_at,description,expected_completion_date,expected_start_date,product_code,quantity,specifications,status,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:30:26.727 DEBUG [SimpleAsyncTaskExecutor-18] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:26.730 DEBUG [SimpleAsyncTaskExecutor-18] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:30:30.374 DEBUG [http-nio-8080-exec-3] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:56.549  INFO [http-nio-8080-exec-5] c.c.c.a.c.PlaceCustomerOrderHandler      : Starting customer order placement: orderId=123e4567-e89b-12d3-a456-426614174000, customerId=123e4567-e89b-12d3-a456-426614174001, itemCount=1
+2025-07-23 12:30:56.550 DEBUG [http-nio-8080-exec-5] c.c.c.a.c.PlaceCustomerOrderHandler      : Validating order items for orderId=123e4567-e89b-12d3-a456-426614174000
+2025-07-23 12:30:56.550  INFO [http-nio-8080-exec-5] c.c.c.domain.model.CustomerOrder         : Customer order placed: orderId=123e4567-e89b-12d3-a456-426614174000, totalAmount=USD 59.98
+2025-07-23 12:30:56.550 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:56.551 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:30:56.552 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into customer_orders (currency,customer_address,customer_email,customer_id,customer_name,manufacturing_order_id,placed_at,status,total_amount,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:30:56.553 DEBUG [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 12:30:56.553 DEBUG [http-nio-8080-exec-5] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderPlaced
+2025-07-23 12:30:56.553  INFO [http-nio-8080-exec-5] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderPlaced timestamp=2025-07-23T10:30:56.550350300Z
+2025-07-23 12:30:56.554  INFO [http-nio-8080-exec-5] c.c.c.a.c.PlaceCustomerOrderHandler      : Successfully placed customer order: orderId=123e4567-e89b-12d3-a456-426614174000, totalAmount=USD 59.98, duration=4ms
+2025-07-23 12:30:56.554  INFO [http-nio-8080-exec-5] AUDIT                                    : CUSTOMER_ORDER_PLACED orderId=123e4567-e89b-12d3-a456-426614174000 customerId=123e4567-e89b-12d3-a456-426614174001 totalAmount=USD 59.98 itemCount=1 duration=4ms
+2025-07-23 12:31:04.125 DEBUG [http-nio-8080-exec-9] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:31:04.127  INFO [http-nio-8080-exec-9] c.c.c.domain.model.CustomerOrder         : Customer order status updated: orderId=123e4567-e89b-12d3-a456-426614174000, from=PLACED, to=CONFIRMED
+2025-07-23 12:31:04.128 DEBUG [http-nio-8080-exec-9] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderStatusUpdated
+2025-07-23 12:31:04.128  INFO [http-nio-8080-exec-9] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderStatusUpdated timestamp=2025-07-23T10:31:04.127512Z
+2025-07-23 12:31:04.128 DEBUG [http-nio-8080-exec-9] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:31:04.129 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : select count(*) from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:31:04.130  INFO [SimpleAsyncTaskExecutor-19] .c.m.a.c.CreateManufacturingOrderHandler : Starting manufacturing order creation: orderId=123e4567-e89b-12d3-a456-426614174000, productCode=AUTO-1753266664130
+2025-07-23 12:31:04.130  INFO [SimpleAsyncTaskExecutor-19] c.c.m.domain.model.ManufacturingOrder    : Manufacturing order created: orderId=123e4567-e89b-12d3-a456-426614174000
+2025-07-23 12:31:04.130 DEBUG [SimpleAsyncTaskExecutor-19] .c.m.a.c.CreateManufacturingOrderHandler : Validating order scheduling for orderId=123e4567-e89b-12d3-a456-426614174000
+2025-07-23 12:31:04.131 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.status=?
+2025-07-23 12:31:04.132 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : select moje1_0.id,moje1_0.actual_completion_date,moje1_0.actual_start_date,moje1_0.created_at,moje1_0.description,moje1_0.expected_completion_date,moje1_0.expected_start_date,moje1_0.product_code,moje1_0.quantity,moje1_0.specifications,moje1_0.status,moje1_0.updated_at from manufacturing_orders moje1_0 where moje1_0.id=?
+2025-07-23 12:31:04.132 DEBUG [SimpleAsyncTaskExecutor-19] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: ManufacturingOrderCreated
+2025-07-23 12:31:04.132  INFO [SimpleAsyncTaskExecutor-19] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=ManufacturingOrderCreated timestamp=2025-07-23T10:31:04.130441200Z
+2025-07-23 12:31:04.133  INFO [SimpleAsyncTaskExecutor-19] .c.m.a.c.CreateManufacturingOrderHandler : Successfully created manufacturing order: orderId=123e4567-e89b-12d3-a456-426614174000, duration=3ms
+2025-07-23 12:31:04.133  INFO [SimpleAsyncTaskExecutor-19] AUDIT                                    : MANUFACTURING_ORDER_CREATED orderId=123e4567-e89b-12d3-a456-426614174000 productCode=AUTO-1753266664130 quantity=1 user=SYSTEM duration=3ms
+2025-07-23 12:31:04.133 DEBUG [SimpleAsyncTaskExecutor-19] org.hibernate.SQL                        : insert into manufacturing_orders (actual_completion_date,actual_start_date,created_at,description,expected_completion_date,expected_start_date,product_code,quantity,specifications,status,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:31:04.133 DEBUG [SimpleAsyncTaskExecutor-20] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:31:04.134 DEBUG [SimpleAsyncTaskExecutor-20] org.hibernate.SQL                        : update customer_orders set currency=?,customer_address=?,customer_email=?,customer_id=?,customer_name=?,manufacturing_order_id=?,placed_at=?,status=?,total_amount=?,updated_at=? where id=?
+2025-07-23 12:31:11.411 DEBUG [http-nio-8080-exec-7] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:45:35.758  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23 12:45:35.760  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23 12:57:31.100  INFO [main] com.company.OrderManagementApplication   : Starting OrderManagementApplication using Java 23.0.1 with PID 15120 (C:\Users\anon\Desktop\order-management\order_management\application\target\classes started by anon in C:\Users\anon\Desktop\order-management\order_management)
+2025-07-23 12:57:31.101 DEBUG [main] com.company.OrderManagementApplication   : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-23 12:57:31.102  INFO [main] com.company.OrderManagementApplication   : The following 1 profile is active: "dev"
+2025-07-23 12:57:32.587  INFO [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23 12:57:32.587  INFO [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-23 12:57:32.623  INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23 12:57:32.912  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23 12:57:33.031  INFO [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64544ee4
+2025-07-23 12:57:33.032  INFO [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23 12:57:33.051  INFO [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/order_management (PostgreSQL 17.4)
+2025-07-23 12:57:33.095  INFO [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.027s)
+2025-07-23 12:57:33.136  INFO [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2025-07-23 12:57:33.139  INFO [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-07-23 12:57:33.581  WARN [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-23 12:57:35.756  INFO [main] com.company.OrderManagementApplication   : Started OrderManagementApplication in 5.265 seconds (process running for 5.824)
+2025-07-23 12:57:35.852  INFO [RMI TCP Connection(4)-172.21.144.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23 12:57:42.531  INFO [http-nio-8080-exec-1] c.c.c.a.c.PlaceCustomerOrderHandler      : Starting customer order placement: orderId=689b0131-d33d-424d-94e8-bab7ff109178, customerId=0b9e954d-428c-4363-bedc-c5f77aac61dd, itemCount=2
+2025-07-23 12:57:42.531 DEBUG [http-nio-8080-exec-1] c.c.c.a.c.PlaceCustomerOrderHandler      : Validating order items for orderId=689b0131-d33d-424d-94e8-bab7ff109178
+2025-07-23 12:57:42.532  INFO [http-nio-8080-exec-1] c.c.c.domain.model.CustomerOrder         : Customer order placed: orderId=689b0131-d33d-424d-94e8-bab7ff109178, totalAmount=USD 487.40
+2025-07-23 12:57:42.552 DEBUG [http-nio-8080-exec-1] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:57:42.580 DEBUG [http-nio-8080-exec-1] org.hibernate.SQL                        : select coje1_0.id,coje1_0.currency,coje1_0.customer_address,coje1_0.customer_email,coje1_0.customer_id,coje1_0.customer_name,coje1_0.manufacturing_order_id,coje1_0.placed_at,coje1_0.status,coje1_0.total_amount,coje1_0.updated_at,i1_0.customer_order_id,i1_0.id,i1_0.currency,i1_0.description,i1_0.product_code,i1_0.quantity,i1_0.unit_price from customer_orders coje1_0 left join order_items i1_0 on coje1_0.id=i1_0.customer_order_id where coje1_0.id=?
+2025-07-23 12:57:42.603 DEBUG [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into customer_orders (currency,customer_address,customer_email,customer_id,customer_name,manufacturing_order_id,placed_at,status,total_amount,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2025-07-23 12:57:42.609 DEBUG [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 12:57:42.617 DEBUG [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into order_items (currency,customer_order_id,description,product_code,quantity,unit_price) values (?,?,?,?,?,?)
+2025-07-23 12:57:42.619 DEBUG [http-nio-8080-exec-1] c.c.sharedkernel.DomainEventPublisher    : Publishing domain event: CustomerOrderPlaced
+2025-07-23 12:57:42.619  INFO [http-nio-8080-exec-1] BUSINESS_EVENT                           : DOMAIN_EVENT_PUBLISHED eventType=CustomerOrderPlaced timestamp=2025-07-23T10:57:42.532082300Z
+2025-07-23 12:57:42.620  INFO [http-nio-8080-exec-1] c.c.c.a.c.PlaceCustomerOrderHandler      : Successfully placed customer order: orderId=689b0131-d33d-424d-94e8-bab7ff109178, totalAmount=USD 487.40, duration=89ms
+2025-07-23 12:57:42.620  INFO [http-nio-8080-exec-1] AUDIT                                    : CUSTOMER_ORDER_PLACED orderId=689b0131-d33d-424d-94e8-bab7ff109178 customerId=0b9e954d-428c-4363-bedc-c5f77aac61dd totalAmount=USD 487.40 itemCount=2 duration=89ms
+2025-07-23 12:57:49.782  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23 12:57:49.784  INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
